@@ -1,0 +1,147 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+
+@import 'tailwindcss/utilities';
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fbbf24
+    , #fbbf24
+    );
+    background-position: 0 100%; /*OR bottom left*/
+    font-family: 'Poppins', sans-serif;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
+ 
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fbbf24
+    , #fbbf24
+    )
+}
+
+.link-underline:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 3px;
+}
+
+.hero {
+    background-image: url(../public/images/bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
+    height: 100vh;
+  }
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+#hero-sub {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+
+#hero-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  
+}
+
+@import 'tailwindcss/utilities';
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fbbf24
+    , #fbbf24
+    );
+    background-position: 0 100%; /*OR bottom left*/
+    font-family: 'Poppins', sans-serif;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
+ 
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fbbf24
+    , #fbbf24
+    )
+}
+
+.link-underline:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 3px;
+}
+
+.hero {
+    background-image: url(../public/images/bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
+    height: 100vh;
+  }
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+#hero-sub {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+
+#hero-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  
+}
