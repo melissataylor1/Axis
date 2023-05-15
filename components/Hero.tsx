@@ -11,7 +11,7 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-left pb-12 md:pb-16 self-center">
-          <p  id="hero-sub" className=" text-lg text-gray-600 mb-8 text-white ml-2" data-aos="zoom-y-out" data-aos-delay="150">Located in Ontario</p> 
+          <p  id="hero-sub" className=" text-lg text-gray-600 mb-8 text-white ml-2" data-aos="zoom-y-out" data-aos-delay="150">Servicing Southern Ontario + more! </p> 
             <h1 id="title" className="text-white uppercase text-5xl font-bold md:text-8xl lg:text-7xl leading-tight tracking-tighter mb-4" data-aos="zoom-y-out">Quality<br></br> <span className="text-amber-400">Contracting <br></br>& Locating</span> <br></br>Services</h1>
             <button
         className="md:mt-8 uppercase relative text-center px-7 py-5 md:px-10 transition-all duration-500

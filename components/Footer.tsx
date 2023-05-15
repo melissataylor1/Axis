@@ -1,16 +1,22 @@
 import Logo from './Logo'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// import the icons you need
+import {
+  faAngleRight
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
     <footer>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="w-full mx-auto px-4 sm:px-6 bg-gray-100">
 
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+        <div className="max-w-6xl grid sm:grid-cols-12 gap-8 py-8 md:py-12  mx-auto">
 
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
-            <div className="mb-2 bg-blue-900/25 pl-5 rounded-lg">
+            <div className="mb-2 5 pl-5 rounded-lg">
               <Logo />
             </div>
             <div className="text-sm text-gray-600">
@@ -19,93 +25,68 @@ export default function Footer() {
           </div>
 
           {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
-            <ul className="text-sm">
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Web Studio</a>
+          <div className="sm:col-span-6 md:col-span-5 ">
+            <h6 id="footer-header" className="text-gray-800 font-semibold mb-2 text-xl">Areas We Service</h6>
+            <p className="text-gray-600 text-sm mb-2 italic mb-3">Our current service area covers a radius of 600km from Guelph, Ontario. However, we are open to discussing the possibility of accommodating longer distances with you.</p>
+            <div className="grid grid-cols-2 gap-2 ">
+            <ul id="footer-place" className="text-gray-600 ">
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Southwest Ontario
               </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</a>
+              <li className="mb-2 "> 
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Niagara Region
               </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Programming Forms</a>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Hamilton, Halton, & Brant
               </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</a>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Greater Toronto Area
               </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</a>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Bruce Peninsula, Lake Simcoe, & Southern Georgian Bay
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Kawartha Lakes
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Timmins
               </li>
             </ul>
+            <ul id="footer-place" className="text-gray-600 ">
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Haliburton Highlands
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Southern Northeastern Ontario
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Sault Ste Marie
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Northwestern Ontario
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Muskoka, Parry Sound, & Algonquin Park
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Montreal 
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Mont Tremblant
+              </li>
+              <li className="mb-2 ">
+              <FontAwesomeIcon icon={faAngleRight} className="text-amber-500"/> Val D'or
+              </li>
+            </ul>
+            </div>
+            <p className="text-gray-600 mt-3 italic text-right">& more!</p>
           </div>
+
 
           {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
-            <ul className="text-sm">
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Documentation</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Tutorials & Guides</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Partners</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* 4th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Company</h6>
-            <ul className="text-sm">
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Home</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About us</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Company values</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* 5th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
-            <p className="text-sm text-gray-600 mb-4">Get the latest news and articles to your inbox every month.</p>
-            <form>
-              <div className="flex flex-wrap mb-4">
-                <div className="w-full">
-                  <label className="block text-sm sr-only" htmlFor="newsletter">Email</label>
-                  <div className="relative flex items-center max-w-xs">
-                    <input id="newsletter" type="email" className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm" placeholder="Your email" required />
-                    <button type="submit" className="absolute inset-0 left-auto" aria-label="Subscribe">
-                      <span className="absolute inset-0 right-auto w-px -ml-px my-2 bg-gray-300" aria-hidden="true"></span>
-                      <svg className="w-3 h-3 fill-current text-blue-600 mx-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
-                      </svg>
-                    </button>
-                  </div>
-                  {/* Success message */}
-                  {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
-                </div>
-              </div>
-            </form>
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-4">
+            <h6 id="footer-header" className="text-gray-800 font-semibold mb-2 text-xl">Our Mission Statement</h6>
+            <p className="text-sm text-gray-600 mb-4">   At Axis, our mission is to enhance and transform properties across Ontario with precision and care. We strive to create personalized living spaces that match our clients' visions and exceed their expectations. Our team of experienced professionals is committed to providing quality...</p>
           </div>
 
         </div>
@@ -115,7 +96,7 @@ export default function Footer() {
 
 
         {/* Bottom area */}
-        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
+        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200 max-w-6xl mx-auto">
 
           {/* Social as */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">

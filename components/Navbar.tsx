@@ -33,7 +33,7 @@ export default function Header() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center tracking-widest text-base font-bold ">
+            <ul className="flex grow justify-end flex-wrap items-center tracking-widest text-base font-semibold ">
               <li>
                 <Link href="/" className="link link-underline link-underline-black text-white hover:text-amber-400 md:mx-1 md:px-2 lg:mx-3 lg:px-3 lg:py-3 flex items-center lg:text-lg">Home</Link>
               </li>
