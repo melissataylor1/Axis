@@ -1,6 +1,7 @@
 import Logo from './Logo'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Map } from './components/Map';
+import MapComponent from './Map';
+
 // import the icons you need
 import {
   faAngleRight
@@ -86,17 +87,14 @@ export default function Footer() {
           {/* 3rd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-4">
             <h6 id="footer-header" className="text-gray-800 font-semibold mb-2 text-xl">Our Mission Statement</h6>
-            <div>
-      <h1>Welcome to my app!</h1>
-      <Map />
-    </div>
+         
             <p className="text-sm text-gray-600 mb-4">   At Axis, our mission is to enhance and transform properties across Ontario with precision and care. We strive to create personalized living spaces that match our clients' visions and exceed their expectations. Our team of experienced professionals is committed to providing quality...</p>
           </div>
-
+         
         </div>
 
 
-
+<MapComponent />
 
 
         {/* Bottom area */}
