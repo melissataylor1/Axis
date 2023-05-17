@@ -1,8 +1,8 @@
-import { MapContainer, TileLayer, Circle, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
+import { MapContainer, TileLayer, Circle, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 
 // Import the Leaflet CSS styles
-import 'leaflet/dist/leaflet.css';
+import "leaflet/dist/leaflet.css";
 
 const svgIcon = `
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -13,8 +13,9 @@ const svgIcon = `
 
 // Define the icon as an L.Icon object
 const icon = new L.Icon({
-  iconUrl: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgIcon),
-  iconRetinaUrl: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgIcon),
+  iconUrl: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgIcon),
+  iconRetinaUrl:
+    "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgIcon),
   iconSize: [24, 24],
   iconAnchor: [12, 24],
 });
@@ -30,7 +31,12 @@ const circle = createCircle(GUELPH_COORDINATES);
 
 function MapComponent() {
   return (
-    <MapContainer center={GUELPH_COORDINATES} zoom={5} style={{ height: '500px' }}>
+    <MapContainer
+      center={GUELPH_COORDINATES}
+      zoom={5}
+      style={{ height: "50vh", width: "90vw" }}
+      className="map-container z-10"
+    >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'

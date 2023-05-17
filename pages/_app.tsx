@@ -4,15 +4,10 @@ import Layout from "components/Layout";
 import Footer from "components/Footer";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-
-     
-      
-   
     <Layout>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
       <Footer />
     </Layout>
-  
   );
 }
 export default MyApp;

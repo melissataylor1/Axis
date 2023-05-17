@@ -1,161 +1,161 @@
-'use client'
+"use client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { useState, useRef, useEffect } from 'react'
-import { Transition } from '@headlessui/react'
-import Image from 'next/image'
-import FeaturesBg from '../public/images/features-bg.png'
-import FeaturesElement from '../public/images/features-element.png'
+// import the icons you need
+import { faAngleRight, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+import { useState, useRef, useEffect } from "react";
 
 export default function Features() {
-  
-  const [tab, setTab] = useState<number>(1)
-
-  const tabs = useRef<HTMLDivElement>(null)
-
-  const heightFix = () => {
-    if (tabs.current && tabs.current.parentElement) tabs.current.parentElement.style.height = `${tabs.current.clientHeight}px`
-  }
-
-  useEffect(() => {
-    heightFix()
-  }, []) 
-
   return (
-    <section className="relative">
-
+    <section className="relative ">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
+
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:w-auto md:w-11/12 sm:w-5/6">
         <div className="pt-12 md:pt-20">
-
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+          <div className="max-w-6xl mx-auto text-center pb-12">
+            <h2 className="h2 mb-4">Precision and Quality in Every Project.</h2>
+            <p className="xl:text-xl md:text-lg text-md text-gray-600 lg:leading-9 leading-7 font-light footer-text">
+              At Axis Contracting and Locating, we bring your property to life
+              with precision and care. Our team of experienced professionals is
+              committed to providing quality craftsmanship in all of our
+              services. Based in Guelph, Ontario, we proudly serve clients
+              within a 600km radius, bringing our expertise to your doorstep.{" "}
+              <br></br>
+              <br></br>
+              We work closely with clients to create personalized spaces that
+              match their visions and exceed their expectations. We believe in
+              building lasting relationships with our clients based on trust,
+              integrity, and a commitment to excellence
+            </p>
           </div>
+          <hr className="pb-12 divide-y divide-blue-200"></hr>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 inline md:grid md:grid-cols-3 gap-12">
+            <h2 className="h3 mb-4 col-span-3 md:text-3xl text-2xl ">
+              We are installation contractors for
+            </h2>
 
+            <a href="https://www.thebunkie.com/" target="_blank">
+              <img
+                src="/images/bunkie_logo.png"
+                alt="Example Image"
+                className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 md:w-auto mx-auto"
+              />
+            </a>
+            <a href="https://sawmillstructures.com/" target="_blank">
+              <img
+                src="/images/sawmill_logo.webp"
+                alt="Example Image"
+                className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 mx-auto md:w-auto"
+              />
+            </a>
+            <a href="https://www.timberbunkies.com/" target="_blank">
+              <img
+                src="/images/timber.png"
+                alt="Example Image"
+                className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 mx-auto md:w-auto pb-8 md:pb-0"
+              />
+            </a>
+          </div>
           {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
-
+          <div className="md:grid md:grid-cols-5 md:gap-6">
             {/* Content */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
+            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-3 md:mt-6">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-              </div>
-              {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(1); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                    </svg>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(2); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z" fillRule="nonzero" />
-                    </svg>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(3); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z" fill="#191919" fillRule="nonzero" />
-                    </svg>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>
-              <div className="relative flex flex-col text-center lg:text-right">
-                {/* Item 1 */}
-                <Transition
-                  show={tab === 1}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 translate-y-16"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
-                  </div>
-                </Transition>
-                {/* Item 2 */}
-                <Transition
-                  show={tab === 2}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 translate-y-16"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
-                  </div>
-                </Transition>
-                {/* Item 3 */}
-                <Transition
-                  show={tab === 3}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 translate-y-16"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
-                  </div>
-                </Transition>
+                <h3 className="h4 mb-3">Other Services</h3>
+                <p className="footer-text lg:text-lg text-md font-light text-gray-600 mb-5">
+                  In addition to bunkie construction, we are proud to offer a
+                  wide variety of contracting and locating services:
+                </p>
+                <ul className=" text-xl text-gray-700">
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    Renovations
+                  </li>
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    Landscaping
+                  </li>
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    Decks
+                  </li>
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    Tile Work
+                  </li>
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    Masonry
+                    <p className="text-xs italic inline">
+                      {" "}
+                      (smaller jobs only)
+                    </p>
+                  </li>
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    Private Utility Locating
+                  </li>
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    GPR Scans
+                  </li>
+                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      className="text-amber-500 text-xl mr-2"
+                    />{" "}
+                    Subsurface Imaging
+                  </li>
+                </ul>
               </div>
             </div>
-
+            <div className=" md:col-span-2 lg:col-span-2 flex">
+              <div className=" self-center mx-auto mb-12 lg:mb-0 ">
+                <div className="photo-container rounded-sm">
+                  <img
+                    src="/images/bunkie2.png"
+                    alt="Example Image"
+                    className="md:w-80 md:h-auto h-96 w-auto rounded-sm "
+                  />
+                </div>
+                <div className="flex">
+                  <p className="footer-text text-sm">View more photos </p>{" "}
+                  <FontAwesomeIcon
+                    icon={faCircleChevronRight}
+                    className="text-amber-500 text-xl mr-2"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }
