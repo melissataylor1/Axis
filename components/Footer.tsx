@@ -7,9 +7,9 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   return (
     <footer>
-      <div className="w-full mx-auto px-4 sm:px-6 bg-gray-200">
+      <div className="w-full sm:w-100vw mx-auto px-4 sm:px-6 bg-gray-200">
         {/* Top area: Blocks */}
-        <div className="lg:max-w-6xl md:max-w-4/5 grid sm:grid-cols-12 gap-4 lg:gap-8 py-8 md:pt-14  mx-auto">
+        <div className="lg:max-w-6xl md:max-w-4/5 grid sm:grid-cols-12 gap-4 lg:gap-8 py-8 md:pt-14  mx-auto w-full">
           {/* 1st block */}
           <div className="sm:col-span-2  ">
             <LogoDark />

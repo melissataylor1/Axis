@@ -2,9 +2,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // import the icons you need
-import { faAngleRight, faCircle } from "@fortawesome/free-solid-svg-icons";
-import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faAngleRight,
+  faEye,
+  faCircleChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { useState, useRef, useEffect } from "react";
 
 export default function Features() {
@@ -14,7 +16,7 @@ export default function Features() {
 
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:w-auto md:w-11/12 sm:w-5/6">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:w-auto md:w-11/12 sm:w-5/6 md:pb-16">
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-6xl mx-auto text-center pb-12">
@@ -23,9 +25,12 @@ export default function Features() {
               At Axis Contracting and Locating, we bring your property to life
               with precision and care. Our team of experienced professionals is
               committed to providing quality craftsmanship in all of our
-              services. Based in Guelph, Ontario, we proudly serve clients
-              within a 600km radius, bringing our expertise to your doorstep.{" "}
-              <br></br>
+              services.{" "}
+              <span className="font-medium">
+                Based in Guelph, Ontario, we proudly serve clients within a
+                600km radius,
+              </span>{" "}
+              bringing our expertise to your doorstep. <br></br>
               <br></br>
               We work closely with clients to create personalized spaces that
               match their visions and exceed their expectations. We believe in
@@ -123,33 +128,46 @@ export default function Features() {
                       icon={faAngleRight}
                       className="text-amber-500 text-xl mr-2"
                     />{" "}
-                    GPR Scans
+                    GPR Scans / Subsurface Imaging
                   </li>
-                  <li className="mb-2 align-center transition transform hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
-                    <FontAwesomeIcon
-                      icon={faAngleRight}
-                      className="text-amber-500 text-xl mr-2"
-                    />{" "}
-                    Subsurface Imaging
+
+                  <li>
+                    {" "}
+                    <a
+                      href="#0"
+                      className="flex transition ease-in-out delay-50  text-gray-500 hover:text-amber-500 duration-300 ml-5 md:ml-0 mt-5"
+                    >
+                      <p className="text-sm footer-text ">
+                        Learn more about our services{" "}
+                      </p>
+                      <FontAwesomeIcon
+                        icon={faCircleChevronRight}
+                        className="text-sm ml-2 self-center"
+                      />{" "}
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className=" md:col-span-2 lg:col-span-2 flex">
+            <div className=" md:col-span-2 lg:col-span-2 flex ">
               <div className=" self-center mx-auto mb-12 lg:mb-0 ">
                 <div className="photo-container rounded-sm">
                   <img
                     src="/images/bunkie2.png"
                     alt="Example Image"
-                    className="md:w-80 md:h-auto h-96 w-auto rounded-sm "
+                    className="md:w-80 md:h-auto h-96 w-auto rounded-sm lg:mt-0 mt-5 "
                   />
                 </div>
-                <div className="flex">
-                  <p className="footer-text text-sm">View more photos </p>{" "}
-                  <FontAwesomeIcon
-                    icon={faCircleChevronRight}
-                    className="text-amber-500 text-xl mr-2"
-                  />
+
+                <div className="b mx-auto h-16 w-64 flex justify-center items-center mt-2 ">
+                  <div className="i h-12 w-48 bg-gradient-to-br from-amber-400 to-amber-600 items-center rounded-full shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></div>
+                  <a className="text-sm text-center text-white font-medium z-10 pointer-events-none flex">
+                    <p> View More Photos</p>
+                    <FontAwesomeIcon
+                      icon={faEye}
+                      className="self-center ml-2"
+                    />{" "}
+                  </a>
                 </div>
               </div>
             </div>
