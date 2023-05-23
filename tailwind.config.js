@@ -4,6 +4,8 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./public/**/*.html",
+    "./node_modules/flowbite-react/**/*.js",
   ],
   theme: {
     extend: {
@@ -85,6 +87,7 @@ module.exports = {
         "6xl": "5rem",
         "7xl": "4.5rem",
         "8xl": "4rem",
+        "9xl": "1.75rem",
       },
       inset: {
         "1/2": "50%",
@@ -139,5 +142,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), "flowbite/plugin"],
 };

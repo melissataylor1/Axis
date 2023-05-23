@@ -1,18 +1,22 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Accordion from "../components/Accordion";
 // import the icons you need
 import { faPenToSquare, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 // import the icons you need
 
-const ServicePage = () => {
+function ServicePage() {
+  const styles: React.CSSProperties = {
+    fontFamily: "Inter",
+  };
+
   return (
     <section className="pt-16 md:pt-24 pb-10">
-      <div className="max-w-7xl xl:w-auto sm:w-11/12 mx-auto my-16">
+      <div className="max-w-7xl xl:w-auto sm:w-11/12 mx-auto my-12">
         <div className="footer-text text-gray-600 px-5 text-gray-600 py-3 border-l-4 border-amber-500 ml-5 sm:ml-0 h-fixed">
           <h1
             id="footer-header"
-            className=" text-2xl md:text-4xl font-semibold py-2"
+            className=" text-9xl lg:text-4xl font-semibold py-2"
           >
             Our Services
           </h1>
@@ -168,105 +172,101 @@ const ServicePage = () => {
               construction or excavation projects.
             </p>
             <hr className="mt-5 w-3/4 mx-auto"></hr>
-            <div className=" italic text-sky-600 text-md mt-5">
-              <FontAwesomeIcon
-                icon={faAngleDown}
-                className="text-amber-500 text-xl mr-2"
-              />
-              What are some advantages to Private Utility Locating?
-              <FontAwesomeIcon
-                icon={faAngleDown}
-                className="text-amber-500 text-xl ml-2"
-              />
-            </div>
-            <div className="grid grid-cols-6 mt-5 gap-3">
-              <div className="bg-gray-300 hover:bg-gray-200 col-span-2 p-3 rounded-md">
-                <img
-                  src="/images/icons/shield.png"
-                  alt="Example Image"
-                  className="w-12 h-12 mx-auto mt-2 "
-                />
-                <h6 className="text-black font-semibold text-lg py-2">
-                  Safety
-                </h6>
-                <p id="service-text">
-                  Private utility locating can help prevent damage to
-                  underground utility lines, which can cause serious safety
-                  hazards, including gas leaks, electrical shock, and water
-                  damage. By using private utility locating services, homeowners
-                  and contractors can ensure that they are aware of the location
-                  of these lines and can avoid damaging them.
-                </p>
-              </div>
-              <div className="bg-gray-300  hover:bg-gray-200 col-span-2 p-3 rounded-md">
-                <img
-                  src="/images/icons/efficient.png"
-                  alt="Example Image"
-                  className="w-12 h-12 mx-auto mt-2"
-                />
-                <h6 className="text-black font-semibold text-lg py-2">
-                  Time & Cost Savings
-                </h6>
-                <p id="service-text">
-                  Private utility locating can save time and money in the long
-                  run by preventing damage to underground utility lines, which
-                  can be expensive to repair. By investing in private utility
-                  locating services upfront, homeowners and contractors can
-                  avoid costly repairs and disruptions to their projects.
-                </p>
-              </div>
-              <div className="bg-gray-300  hover:bg-gray-200 col-span-2 p-3 rounded-md">
-                <img
-                  src="/images/icons/compliance.png"
-                  alt="Example Image"
-                  className="w-12 h-12 mx-auto  mt-2"
-                />
-                <h6 className="text-black font-semibold text-lg py-2">
-                  Compliance
-                </h6>
-                <p id="service-text">
-                  Many municipalities and states require private utility
-                  locating before excavation or construction can begin. By using
-                  private utility locating services, homeowners and contractors
-                  can ensure that they are complying with local regulations and
-                  avoiding any potential fines or penalties.
-                </p>
-              </div>
-              <div className="bg-gray-300 hover:bg-gray-200 col-start-2 col-span-2 p-3 rounded-md">
-                <img
-                  src="/images/icons/targeting.png"
-                  alt="Example Image"
-                  className="w-12 h-12 mx-auto mt-2"
-                />
-                <h6 className="text-black font-semibold text-lg py-2">
-                  Accuracy
-                </h6>
-                <p id="service-text">
-                  Private utility locating services use advanced technologies,
-                  such as ground penetrating radar and electromagnetic locators,
-                  to accurately locate underground utility lines. This can help
-                  ensure that projects are completed with precision and without
-                  any surprises or setbacks.
-                </p>
-              </div>
-              <div className="bg-gray-300 hover:bg-gray-200 col-span-2 p-3 rounded-md">
-                <img
-                  src="/images/icons/sun.png"
-                  alt="Example Image"
-                  className="w-12 h-12 mx-auto mt-2"
-                />
-                <h6 className="text-black font-semibold text-lg py-2">
-                  Peace of Mind
-                </h6>
-                <p id="service-text">
-                  Private utility locating can provide homeowners and
-                  contractors with peace of mind, knowing that they have done
-                  everything they can to ensure the safety and success of their
-                  projects. By investing in private utility locating services,
-                  they can feel confident that they are making informed
-                  decisions and avoiding potential risks.
-                </p>
-              </div>
+            <div style={styles}>
+              <Accordion title="What are some advantages to Private Utility Locating?">
+                <div className="grid grid-cols-6 mt-5 gap-3 text-center">
+                  <div className="bg-gray-300 hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                    <img
+                      src="/images/icons/shield.png"
+                      alt="Example Image"
+                      className="w-12 h-12 mx-auto mt-2 "
+                    />
+                    <h6 className="text-black font-semibold text-lg py-2">
+                      Safety
+                    </h6>
+                    <p id="service-text">
+                      Private utility locating can help prevent damage to
+                      underground utility lines, which can cause serious safety
+                      hazards, including gas leaks, electrical shock, and water
+                      damage. By using private utility locating services,
+                      homeowners and contractors can ensure that they are aware
+                      of the location of these lines and can avoid damaging
+                      them.
+                    </p>
+                  </div>
+                  <div className="bg-gray-300  hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                    <img
+                      src="/images/icons/efficient.png"
+                      alt="Example Image"
+                      className="w-12 h-12 mx-auto mt-2"
+                    />
+                    <h6 className="text-black font-semibold text-lg py-2">
+                      Time & Cost Savings
+                    </h6>
+                    <p id="service-text">
+                      Private utility locating can save time and money in the
+                      long run by preventing damage to underground utility
+                      lines, which can be expensive to repair. By investing in
+                      private utility locating services upfront, homeowners and
+                      contractors can avoid costly repairs and disruptions to
+                      their projects.
+                    </p>
+                  </div>
+                  <div className="bg-gray-300  hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                    <img
+                      src="/images/icons/compliance.png"
+                      alt="Example Image"
+                      className="w-12 h-12 mx-auto  mt-2"
+                    />
+                    <h6 className="text-black font-semibold text-lg py-2">
+                      Compliance
+                    </h6>
+                    <p id="service-text">
+                      Many municipalities and states require private utility
+                      locating before excavation or construction can begin. By
+                      using private utility locating services, homeowners and
+                      contractors can ensure that they are complying with local
+                      regulations and avoiding any potential fines or penalties.
+                    </p>
+                  </div>
+                  <div className="bg-gray-300 hover:bg-gray-200 col-start-2 col-span-2 p-3 rounded-md">
+                    <img
+                      src="/images/icons/targeting.png"
+                      alt="Example Image"
+                      className="w-12 h-12 mx-auto mt-2"
+                    />
+                    <h6 className="text-black font-semibold text-lg py-2">
+                      Accuracy
+                    </h6>
+                    <p id="service-text">
+                      Private utility locating services use advanced
+                      technologies, such as ground penetrating radar and
+                      electromagnetic locators, to accurately locate underground
+                      utility lines. This can help ensure that projects are
+                      completed with precision and without any surprises or
+                      setbacks.
+                    </p>
+                  </div>
+                  <div className="bg-gray-300 hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                    <img
+                      src="/images/icons/sun.png"
+                      alt="Example Image"
+                      className="w-12 h-12 mx-auto mt-2"
+                    />
+                    <h6 className="text-black font-semibold text-lg py-2">
+                      Peace of Mind
+                    </h6>
+                    <p id="service-text">
+                      Private utility locating can provide homeowners and
+                      contractors with peace of mind, knowing that they have
+                      done everything they can to ensure the safety and success
+                      of their projects. By investing in private utility
+                      locating services, they can feel confident that they are
+                      making informed decisions and avoiding potential risks.
+                    </p>
+                  </div>
+                </div>
+              </Accordion>
             </div>
           </div>
         </div>
@@ -306,5 +306,5 @@ const ServicePage = () => {
       </div>
     </section>
   );
-};
+}
 export default ServicePage;

@@ -14,6 +14,7 @@
 
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
     .rtl {
@@ -48,7 +49,7 @@
 }
 
 .hero {
-    background-image: url(../public/images/bg1.png);
+    background-image: url(../public/images/bg2.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -80,7 +81,7 @@
 
 @import 'tailwindcss/utilities';
 
-/*FONT*/
+/*******************FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
@@ -88,7 +89,7 @@
         direction: rtl;
     }
 }
-/*HERO AND FOOTER FONT STUFF */
+/********************HERO AND FOOTER FONT STUFF */
 .link-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent), linear-gradient(#fbbf24
@@ -116,7 +117,7 @@
 }
 
 .hero {
-    background-image: url(../public/images/bg.png);
+    background-image: url(../public/images/bg2.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -186,7 +187,7 @@
       background-position: left
     }
   }
-/*PHOTO ANIMATION */ 
+/********************PHOTO ANIMATION */ 
 .photo-container {
   position: relative;
   overflow: hidden;
@@ -200,7 +201,7 @@
   transform: scale(1.1);
 }
 
-/*BUTTON ANIMATION */
+/********************BUTTON ANIMATION */
 .i::before {
     content: "";
     position: absolute;
@@ -236,7 +237,7 @@
     }
   }
 
-  /*about us header*/
+  /********************SERVICES HEADER */
   .services{
    
     
@@ -328,4 +329,68 @@
 #service-text {
     font-size: small;
     line-height: 1.5rem;
+}
+
+
+/*--------------------------------------------------------------
+# GALLERY
+--------------------------------------------------------------*/
+
+.carousel {
+  position: relative;
+  margin-top: 54px;
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.carousel-image {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 6px;
+  background-color: #ccc;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+
+.carousel-dot.active {
+  background-color: #333;
+  height: 8px;
+}
+
+
+/*******************OTHER */
+.accord-text {
+  font-family: 'Inter', sans-serif;
+  color: black!important;
+  font-size: 1rem!important;
+}
+
+.gallery-bg {
+  background-image: url(../public/images/bg_gallery.png);
+    background-size: repeat;
+    height: 100vh;
+    opacity: 0.3;
 }

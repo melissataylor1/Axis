@@ -35,7 +35,7 @@ export default function Features() {
               We work closely with clients to create personalized spaces that
               match their visions and exceed their expectations. We believe in
               building lasting relationships with our clients based on trust,
-              integrity, and a commitment to excellence
+              integrity, and a commitment to excellence.
             </p>
           </div>
           <hr className="pb-12 divide-y divide-blue-200"></hr>

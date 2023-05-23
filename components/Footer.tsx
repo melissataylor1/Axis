@@ -88,7 +88,7 @@ export default function Footer() {
                   icon={faAngleRight}
                   className="text-amber-500"
                 />{" "}
-                Southwestern Quebec
+                Ottawa Valley
               </li>
               <li className="mb-1">
                 <FontAwesomeIcon
