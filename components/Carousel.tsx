@@ -42,7 +42,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
               key={index}
               src={image}
               alt={`Image ${index + 1}`}
-              className={`carousel-image lg:drop-shadow-xl drop-shadow-md ${
+              className={`carousel-image lg:drop-shadow-xl drop-shadow-xl ${
                 index === currentImageIndex ? "active" : ""
               }`}
             />
@@ -64,7 +64,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
           <div
             key={index}
             className={`w-4 h-3  ${
-              index === currentImageIndex ? "bg-blue-500" : "bg-sky-200"
+              index === currentImageIndex ? "bg-sky-600" : "bg-sky-200"
             }`}
             style={{
               transition: "width 0.3s",

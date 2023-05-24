@@ -11,8 +11,8 @@ function ServicePage() {
   };
 
   return (
-    <section className="pt-16 md:pt-24 pb-10">
-      <div className="max-w-7xl xl:w-auto sm:w-11/12 mx-auto my-12">
+    <section className=" pt-16 md:pt-24 pb-10 other-bg ">
+      <div className="max-w-7xl xl:w-auto sm:w-11/12 mx-auto my-12 ">
         <div className="footer-text text-gray-600 px-5 text-gray-600 py-3 border-l-4 border-amber-500 ml-5 sm:ml-0 h-fixed">
           <h1
             id="footer-header"
@@ -273,19 +273,19 @@ function ServicePage() {
 
         <div className="">
           <hr className="my-10"></hr>
-          <div className="grid grid-cols-2 gap-5">
-            <div>
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-7">
               <img
                 src="/images/bunkienew.png"
                 alt="Example Image"
-                className="md:h-96 h-auto w-auto rounded-sm lg:mt-0 mt-5 "
+                className=" h-auto w-auto rounded-sm lg:mt-0 mt-5 "
               />
             </div>
-            <div className="self-center">
-              <p className="footer-text text-3xl font-semibold text-center mb-5">
+            <div className="self-center col-span-5">
+              <p className="footer-text lg:text-3xl md:text-2xl text-xl font-semibold text-center lg:mb-5 mb-2">
                 Ready to bring your construction project to life?
               </p>
-              <p className="footer-text text-md text-center leading-8 pb-3">
+              <p className="footer-text text-md text-center lg:leading-8 leading-6 pb-3">
                 Contact us today for a friendly consultation or free quote, and
                 let us show you the genuine care and expertise we bring to every
                 construction and locating project.

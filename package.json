@@ -17,7 +17,6 @@
     "@material-tailwind/react": "^2.0.1",
     "@next/font": "^13.4.2",
     "@react-google-maps/api": "^2.18.1",
-    "@tailwindcss/forms": "^0.5.3",
     "daisyui": "^2.42.1",
     "flowbite": "^1.6.5",
     "flowbite-react": "^0.4.4",
@@ -26,9 +25,11 @@
     "next-auth": "^4.17.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-leaflet": "^4.2.1"
+    "react-leaflet": "^4.2.1",
+    "use-places-autocomplete": "^4.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "@types/leaflet": "^1.9.3",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",

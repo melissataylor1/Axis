@@ -5,4 +5,8 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  env: {
+    GOOGLE_MAPS_API_KEY: "AIzaSyBj0i_hY0xA3R7Hx_bfKnUqkDhA2dZIiWU",
+  },
+};

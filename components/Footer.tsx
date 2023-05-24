@@ -1,4 +1,5 @@
 import LogoDark from "./LogoDark";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // import the icons you need
@@ -133,7 +134,8 @@ export default function Footer() {
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li className="ml-4">
               <a
-                href="#0"
+                href="https://www.facebook.com/people/Axis-Contractors/pfbid02WUBgquwL7eHS4fyQUmzPhn8movv3BNyRmBXF1qmY57mqMoVgvXt9ZVQr3Fnn2LJvl/"
+                target="_blank"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
               >

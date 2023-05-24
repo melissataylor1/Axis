@@ -29,28 +29,30 @@ function createCircle(center: L.LatLngExpression) {
 const GUELPH_COORDINATES: L.LatLngExpression = [43.5448, -80.2482];
 const circle = createCircle(GUELPH_COORDINATES);
 
-function MapComponent() {
+function MapComponentMobile() {
   return (
-    <MapContainer
-      center={GUELPH_COORDINATES}
-      zoom={5}
-      style={{
-        height: "500px",
-        width: "600px",
-        borderRadius: "10px",
-      }}
-      className="map-container z-10"
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-      />
-      {circle}
-      <Marker position={GUELPH_COORDINATES} icon={icon}>
-        <Popup>Guelph, ON</Popup>
-      </Marker>
-    </MapContainer>
+    <div style={{ height: "400px" }}>
+      <MapContainer
+        center={GUELPH_COORDINATES}
+        zoom={5}
+        style={{
+          height: "100%",
+          minHeight: "100%",
+          borderRadius: "10px",
+        }}
+        className="map-container z-10"
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        />
+        {circle}
+        <Marker position={GUELPH_COORDINATES} icon={icon}>
+          <Popup>Guelph, ON</Popup>
+        </Marker>
+      </MapContainer>
+    </div>
   );
 }
 
-export default MapComponent;
+export default MapComponentMobile;
