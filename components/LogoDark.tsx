@@ -6,7 +6,7 @@ export default function LogoDark() {
   return (
     <Link href="/" className="block" aria-label="Cruip">
       <div className="">
-        <Image src={Logo2} className="w-36 lg:w-56" />
+        <Image src={Logo2} className="w-36 lg:w-56" alt="example" />
       </div>
     </Link>
   );
