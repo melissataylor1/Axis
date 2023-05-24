@@ -67,10 +67,12 @@ const ContactPage = () => {
               Say Hello
             </p>
 
-            <p className="text-black mt-2 text-xl font-light">
-              <span className="text-gray-700 font-normal">Email:</span>{" "}
-              aaxis.cul@gmail.com
-            </p>
+            <a href="mailto: aaxis.cul@gmail.com">
+              <p className="text-black mt-2 text-xl font-light">
+                <span className="text-gray-700 font-normal">Email:</span>{" "}
+                aaxis.cul@gmail.com
+              </p>
+            </a>
             <p className="text-black my-3 text-xl font-light">
               <span className="text-gray-700 font-normal">Phone:</span>{" "}
               666-666-6666

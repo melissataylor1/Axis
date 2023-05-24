@@ -1,5 +1,6 @@
 import LogoDark from "./LogoDark";
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // import the icons you need
@@ -52,12 +53,12 @@ export default function Footer() {
             </p>
             <p className="text-sm footer-text text-gray-500">
               See more about our services{" "}
-              <a
-                href="#0"
+              <Link
+                href="/services"
                 className="text-gray-500 hover:text-amber-500 underline"
               >
                 here
-              </a>
+              </Link>
             </p>
           </div>
 
@@ -122,11 +123,11 @@ export default function Footer() {
               </li>
             </ul>
 
-            <a href="#0">
+            <Link href="/contact">
               <p className="footer-text text-sm text-gray-600 mt-2 italic text-left hover:text-amber-500 underline">
                 & many more...
               </p>
-            </a>
+            </Link>
           </div>
         </div>
         {/* Bottom area */}
@@ -138,6 +139,8 @@ export default function Footer() {
                 href="https://www.facebook.com/people/Axis-Contractors/pfbid02WUBgquwL7eHS4fyQUmzPhn8movv3BNyRmBXF1qmY57mqMoVgvXt9ZVQr3Fnn2LJvl/"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <svg
                   className="w-8 h-8 fill-current"
