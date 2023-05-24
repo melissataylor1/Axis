@@ -135,7 +135,6 @@ export default function Footer() {
             <li className="ml-4">
               <a
                 href="https://www.facebook.com/people/Axis-Contractors/pfbid02WUBgquwL7eHS4fyQUmzPhn8movv3BNyRmBXF1qmY57mqMoVgvXt9ZVQr3Fnn2LJvl/"
-                target="_blank"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
               >
