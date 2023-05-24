@@ -45,9 +45,10 @@ export default function Footer() {
               {" "}
               At Axis, our mission is to enhance and transform properties across
               Ontario with precision and care. We strive to create personalized
-              living spaces that match our clients' visions and exceed their
-              expectations. Our team of experienced professionals is committed
-              to providing quality craftsmanship in all of our services.
+              living spaces that match our clients&apos; visions and exceed
+              their expectations. Our team of experienced professionals is
+              committed to providing quality craftsmanship in all of our
+              services.
             </p>
             <p className="text-sm footer-text text-gray-500">
               See more about our services{" "}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import the icons you need
 import { faAnglesRight, faAnglesLeft } from "@fortawesome/free-solid-svg-icons";

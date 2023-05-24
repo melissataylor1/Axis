@@ -34,10 +34,11 @@ const ContactPage = () => {
               Located in Guelph, we operate within a 600km radius.
             </p>
             <p className="footer-text text-md lg:text-left text-center xl:leading-8 md:leading-7 pb-0 md:pb-3 mx-4 md:mx-0">
-              That's right - We proudly serve an extensive area within a 600km
-              radius of Guelph. That includes a variety of <br></br> However, we
-              are always open to discussing opportunities beyond this range, as
-              we are committed to going the extra mile for our clients.
+              That&apos;s right - We proudly serve an extensive area within a
+              600km radius of Guelph. That includes a variety of <br></br>{" "}
+              However, we are always open to discussing opportunities beyond
+              this range, as we are committed to going the extra mile for our
+              clients.
             </p>
           </div>
           <div className="col-span-4 lg:mt-0 mt-10 lg:w-auto px-1 mx-auto block lg:hidden">
@@ -53,7 +54,7 @@ const ContactPage = () => {
           <div className="md:col-span-7 col-span-11 mx-auto ">
             <p className="footer-text text-lg text-gray-700 my-3 font-semibold">
               {" "}
-              Share some Details of Your Project and We'll Get Back to You
+              Share some Details of Your Project and We&apos;ll Get Back to You
               Shortly
             </p>
             <ContactForm />

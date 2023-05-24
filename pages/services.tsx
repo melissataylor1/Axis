@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Accordion from "../components/Accordion";
 // import the icons you need
@@ -34,7 +35,7 @@ function ServicePage() {
           <hr className="col-span-12"></hr>
           <div className="single-service lg:col-span-5 md:col-span-6 col-span-12">
             <div className="service-icon">
-              <img
+              <Image
                 src="/images/icons/cabin2.png"
                 alt="Example Image"
                 className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
@@ -71,7 +72,7 @@ function ServicePage() {
           </div>
           <div className="single-service lg:col-span-4 md:col-span-6 col-span-12">
             <div className="service-icon">
-              <img
+              <Image
                 src="/images/icons/pier2.png"
                 alt="Example Image"
                 className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
@@ -91,7 +92,7 @@ function ServicePage() {
           <div className="single-service lg:col-span-3 md:col-span-6 col-span-12">
             <div className="service-icon">
               <div className="service-icon">
-                <img
+                <Image
                   src="/images/icons/house2.png"
                   alt="Example Image"
                   className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
@@ -107,7 +108,7 @@ function ServicePage() {
 
           <div className="single-service lg:col-span-4 md:col-span-6 col-span-12 ">
             <div className="service-icon">
-              <img
+              <Image
                 src="/images/icons/planning.png"
                 alt="Example Image"
                 className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
@@ -123,7 +124,7 @@ function ServicePage() {
 
           <div className="single-service lg:col-span-4 md:col-span-6 col-span-12 ">
             <div className="service-icon">
-              <img
+              <Image
                 src="/images/icons/tiles2.png"
                 alt="Example Image"
                 className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
@@ -137,7 +138,7 @@ function ServicePage() {
           </div>
           <div className="single-service lg:col-span-4 md:col-span-6 col-span-12">
             <div className="service-icon">
-              <img
+              <Image
                 src="/images/icons/bricklayer.png"
                 alt="Example Image"
                 className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
@@ -163,7 +164,7 @@ function ServicePage() {
           <hr className="col-span-12"></hr>
           <div className="single-service col-span-12">
             <div className="service-icon">
-              <img
+              <Image
                 src="/images/icons/radar.png"
                 alt="Example Image"
                 className="lg:w-24 lg:h-24 w-16 h-16 mx-auto mt-2 "
@@ -183,7 +184,7 @@ function ServicePage() {
               <Accordion title="What are some advantages to Private Utility Locating?">
                 <div className="grid grid-cols-6 mt-5 gap-3 text-center">
                   <div className="bg-gray-300 hover:bg-gray-200 lg:col-span-2 md:col-span-3  col-span-6 p-3 rounded-md">
-                    <img
+                    <Image
                       src="/images/icons/shield.png"
                       alt="Example Image"
                       className="w-12 h-12 mx-auto mt-2 "
@@ -202,7 +203,7 @@ function ServicePage() {
                     </p>
                   </div>
                   <div className="bg-gray-300  hover:bg-gray-200 lg:col-span-2 md:col-span-3  col-span-6 p-3 rounded-md">
-                    <img
+                    <Image
                       src="/images/icons/efficient.png"
                       alt="Example Image"
                       className="w-12 h-12 mx-auto mt-2"
@@ -220,7 +221,7 @@ function ServicePage() {
                     </p>
                   </div>
                   <div className="bg-gray-300  hover:bg-gray-200 lg:col-span-2 md:col-span-3  col-span-6 p-3 rounded-md">
-                    <img
+                    <Image
                       src="/images/icons/compliance.png"
                       alt="Example Image"
                       className="w-12 h-12 mx-auto  mt-2"
@@ -237,7 +238,7 @@ function ServicePage() {
                     </p>
                   </div>
                   <div className="bg-gray-300 hover:bg-gray-200 lg:col-start-2 md:col-span-3 col-span-6 p-3 rounded-md">
-                    <img
+                    <Image
                       src="/images/icons/targeting.png"
                       alt="Example Image"
                       className="w-12 h-12 mx-auto mt-2"
@@ -255,7 +256,7 @@ function ServicePage() {
                     </p>
                   </div>
                   <div className="bg-gray-300 hover:bg-gray-200 lg:col-span-2 md:col-span-4 col-span-6 md:col-start-2 p-3 rounded-md">
-                    <img
+                    <Image
                       src="/images/icons/sun.png"
                       alt="Example Image"
                       className="w-12 h-12 mx-auto mt-2"
@@ -282,7 +283,7 @@ function ServicePage() {
           <hr className="my-10"></hr>
           <div className="grid grid-cols-12 gap-5">
             <div className="md:col-span-7 col-span-12">
-              <img
+              <Image
                 src="/images/bunkienew.png"
                 alt="Example Image"
                 className=" h-auto w-auto rounded-sm lg:mt-0 mt-5 "
