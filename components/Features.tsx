@@ -45,21 +45,21 @@ export default function Features() {
               We are installation contractors for
             </h2>
 
-            <a href="https://www.thebunkie.com/" target="_blank">
+            <a href="https://www.thebunkie.com/">
               <img
                 src="/images/bunkie_logo.png"
                 alt="Example Image"
                 className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 md:w-auto mx-auto"
               />
             </a>
-            <a href="https://sawmillstructures.com/" target="_blank">
+            <a href="https://sawmillstructures.com/">
               <img
                 src="/images/sawmill_logo.webp"
                 alt="Example Image"
                 className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 mx-auto md:w-auto"
               />
             </a>
-            <a href="https://www.timberbunkies.com/" target="_blank">
+            <a href="https://www.timberbunkies.com/">
               <img
                 src="/images/timber.png"
                 alt="Example Image"
