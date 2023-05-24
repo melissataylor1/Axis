@@ -23,14 +23,14 @@ const ContactPage = () => {
           >
             Contact Us
           </h1>
-          <p className="">
+          <p className="text-sm md:text-md">
             Get in touch with us to schedule a consultation and receive a
             complimentary quote.
           </p>
         </div>
         <div className="lg:grid grid-cols-7 xl:gap-8 md:gap-5">
           <div className="self-center col-span-3 lg:mb-32 mb-0 sm:mx-2">
-            <p className="footer-text xl:text-3xl lg:text-9xl md:text-2xl text-xl font-bold lg:text-left text-center xl:mb-5 md:mb-3 mb-5 mx-5 md:mx-0 ">
+            <p className="footer-text xl:text-3xl lg:text-9xl md:text-2xl text-xl font-bold lg:text-left text-center xl:mb-5 sm:mb-3 mb-4 mx-5 md:mx-0 ">
               Located in Guelph, we operate within a 600km radius.
             </p>
             <p className="footer-text text-md lg:text-left text-center xl:leading-8 md:leading-7 pb-0 md:pb-3 mx-4 md:mx-0">
@@ -49,7 +49,7 @@ const ContactPage = () => {
         </div>
         <hr className="my-8"></hr>
 
-        <div className="grid grid-cols-12 lg:gap-10 gap-7 mt-5 mx-auto">
+        <div className="grid grid-cols-12 lg:gap-10 gap-7 mt-5 mx-auto ml-5 md:ml-0">
           <div className="md:col-span-7 col-span-11 mx-auto ">
             <p className="footer-text text-lg text-gray-700 my-3 font-semibold">
               {" "}

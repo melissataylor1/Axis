@@ -178,7 +178,7 @@ function ServicePage() {
               precise mapping and minimizing the risk of damage during
               construction or excavation projects.
             </p>
-            <hr className="mt-5 w-3/4 mx-auto"></hr>
+            <hr className="mt-5 w-3/4 mx-auto mb-5 md:mb-0"></hr>
             <div style={styles}>
               <Accordion title="What are some advantages to Private Utility Locating?">
                 <div className="grid grid-cols-6 mt-5 gap-3 text-center">
@@ -298,12 +298,13 @@ function ServicePage() {
                 construction and locating project.
               </p>
               <div className="b mx-auto h-16 w-80 flex justify-center items-center mt-2 ">
-                <div className="i h-16 w-52 bg-gradient-to-br from-amber-400 to-amber-600 items-center rounded-lg shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></div>
+                <div className="i lg:h-16 lg:w-52 w-44 h-12 bg-gradient-to-br from-amber-400 to-amber-600 items-center rounded-lg shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></div>
                 <Link
-                  className="text-md text-center text-white font-medium z-10 pointer-events-none flex"
-                  href="pages/contact"
+                  href="/contact"
+                  className="lg:text-md text-sm text-center text-white font-medium z-10 flex"
                 >
-                  <p> Contact Us TODAY</p>
+                  {" "}
+                  Contact Us TODAY{" "}
                   <FontAwesomeIcon
                     icon={faPenToSquare}
                     className="self-center ml-2"

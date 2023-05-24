@@ -1,3 +1,6 @@
+import React from "react";
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="hero relative">
@@ -9,7 +12,7 @@ export default function Hero() {
             <div className="text-left pb-12 md:pb-16 self-center">
               <p
                 id="hero-sub"
-                className=" text-lg text-gray-600 mb-8 text-white ml-2"
+                className=" text-lg text-gray-600 mb-4 text-white ml-2"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
@@ -17,7 +20,7 @@ export default function Hero() {
               </p>
               <h1
                 id="title"
-                className="text-white uppercase text-5xl font-bold md:text-8xl lg:text-7xl leading-tight tracking-tighter mb-4"
+                className="text-white uppercase text-5xl font-bold md:text-8xl lg:text-7xl leading-tight tracking-tighter mb-10"
                 data-aos="zoom-y-out"
               >
                 Axis<br></br>{" "}
@@ -26,7 +29,8 @@ export default function Hero() {
                 </span>{" "}
                 <br></br>Services
               </h1>
-              <button
+
+              <Link
                 className="md:mt-8 uppercase relative text-center px-7 py-5 md:px-10 transition-all duration-500
             before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-amber-400 before:transition-all
             before:duration-300 before:opacity-90 before:hover:opacity-0 before:hover:scale-50
@@ -34,11 +38,12 @@ export default function Hero() {
             after:border after:border-amber/50 after:scale-125 after:hover:opacity-100 after:hover:scale-100"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
+                href="/contact"
               >
                 <span className="relative text-white uppercase" id="hero-btn">
                   Get a Free Quote
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

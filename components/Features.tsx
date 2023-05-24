@@ -1,6 +1,7 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import React from "react";
+import Link from "next/link";
 // import the icons you need
 import {
   faAngleRight,
@@ -159,15 +160,18 @@ export default function Features() {
                   />
                 </div>
 
-                <div className="b mx-auto h-16 w-64 flex justify-center items-center mt-2 ">
+                <div className="b mx-auto h-16 w-64 flex justify-center items-center mt-5 ">
                   <div className="i h-12 w-48 bg-gradient-to-br from-amber-400 to-amber-600 items-center rounded-full shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></div>
-                  <a className="text-sm text-center text-white font-medium z-10 pointer-events-none flex">
+                  <Link
+                    className="text-sm text-center text-white font-medium z-10 flex"
+                    href="/gallery"
+                  >
                     <p> View More Photos</p>
                     <FontAwesomeIcon
                       icon={faEye}
                       className="self-center ml-2"
                     />{" "}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

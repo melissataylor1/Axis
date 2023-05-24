@@ -1,8 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import Carousel from "../components/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Link from "next/link";
 // import the icons you need
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 const GalleryPage: React.FC = () => {
@@ -43,11 +42,13 @@ const GalleryPage: React.FC = () => {
             </p>
             <div className="b mx-auto lg:mx-0 h-16 w-80 flex justify-center items-center mt-3 ">
               <div className="i lg:h-16 lg:w-52 w-44 h-12 bg-gradient-to-br from-amber-400 to-amber-600 items-center rounded-lg shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></div>
+
               <Link
-                className="lg:text-md text-sm text-center text-white font-medium z-10 pointer-events-none flex"
                 href="/contact"
+                className="lg:text-md text-sm text-center text-white font-medium z-10 flex"
               >
-                <p> Contact Us TODAY</p>
+                {" "}
+                Contact Us TODAY{" "}
                 <FontAwesomeIcon
                   icon={faPenToSquare}
                   className="self-center ml-2"
