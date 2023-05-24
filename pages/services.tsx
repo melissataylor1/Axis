@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Accordion from "../components/Accordion";
 // import the icons you need
@@ -24,16 +25,19 @@ function ServicePage() {
         </div>
         <div>
           {" "}
-          <h2 className="h2 text-xl pt-10 pb-3 text-gray-800">Contracting</h2>
+          <h2 className="h2 text-xl pt-10 pb-3 text-gray-800 md:mx-0 mx-5">
+            Contracting
+          </h2>
         </div>
-        <div className="services grid grid-cols-12 gap-8">
+
+        <div className="services grid grid-cols-12 lg:gap-5 xl:gap-8 gap-3 md:mx-0 mx-5">
           <hr className="col-span-12"></hr>
-          <div className="single-service col-span-5">
+          <div className="single-service lg:col-span-5 md:col-span-6 col-span-12">
             <div className="service-icon">
               <img
                 src="/images/icons/cabin2.png"
                 alt="Example Image"
-                className="w-24 h-24 mx-auto "
+                className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
               />
             </div>
             <h4 className="footer-text font-semibold">Bunkie Construction</h4>
@@ -65,12 +69,12 @@ function ServicePage() {
               cottage bunkie construction project.
             </p>
           </div>
-          <div className="single-service col-span-4">
+          <div className="single-service lg:col-span-4 md:col-span-6 col-span-12">
             <div className="service-icon">
               <img
                 src="/images/icons/pier2.png"
                 alt="Example Image"
-                className="w-24 h-24 mx-auto "
+                className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
               />
             </div>
             <h4 className="footer-text font-semibold">
@@ -83,13 +87,14 @@ function ServicePage() {
               blend with your waterfront property.
             </p>
           </div>
-          <div className="single-service col-span-3">
+
+          <div className="single-service lg:col-span-3 md:col-span-6 col-span-12">
             <div className="service-icon">
               <div className="service-icon">
                 <img
                   src="/images/icons/house2.png"
                   alt="Example Image"
-                  className="w-24 h-24 mx-auto "
+                  className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
                 />
               </div>
             </div>
@@ -100,12 +105,12 @@ function ServicePage() {
             </p>
           </div>
 
-          <div className="single-service col-span-4">
+          <div className="single-service lg:col-span-4 md:col-span-6 col-span-12 ">
             <div className="service-icon">
               <img
                 src="/images/icons/planning.png"
                 alt="Example Image"
-                className="w-24 h-24 mx-auto "
+                className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
               />
             </div>
             <h4 className="footer-text font-semibold">Landscaping</h4>
@@ -115,12 +120,13 @@ function ServicePage() {
               tranquility of your surroundings.
             </p>
           </div>
-          <div className="single-service col-span-4">
+
+          <div className="single-service lg:col-span-4 md:col-span-6 col-span-12 ">
             <div className="service-icon">
               <img
                 src="/images/icons/tiles2.png"
                 alt="Example Image"
-                className="w-24 h-24 mx-auto "
+                className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
               />
             </div>
             <h4 className="footer-text font-semibold">Tiling</h4>
@@ -129,12 +135,12 @@ function ServicePage() {
               sophistication to any room with our expert tiling services.
             </p>
           </div>
-          <div className="single-service col-span-4">
+          <div className="single-service lg:col-span-4 md:col-span-6 col-span-12">
             <div className="service-icon">
               <img
                 src="/images/icons/bricklayer.png"
                 alt="Example Image"
-                className="w-24 h-24 mx-auto "
+                className="lg:w-24 lg:h-24 w-16 h-16 mx-auto "
               />
             </div>
             <h4 className="footer-text font-semibold">Masonry</h4>
@@ -148,18 +154,19 @@ function ServicePage() {
             </p>
           </div>
         </div>
-        <div>
+
+        <div className="md:mx-0 mx-5">
           {" "}
           <h2 className="h2 text-xl pt-10 pb-3 text-gray-800">Locating</h2>
         </div>
-        <div className="services grid grid-cols-12 gap-8">
+        <div className="services grid grid-cols-12 gap-8 md:mx-0 mx-5">
           <hr className="col-span-12"></hr>
           <div className="single-service col-span-12">
             <div className="service-icon">
               <img
                 src="/images/icons/radar.png"
                 alt="Example Image"
-                className="w-24 h-24 mx-auto mt-2 "
+                className="lg:w-24 lg:h-24 w-16 h-16 mx-auto mt-2 "
               />
             </div>
             <h4 className="footer-text font-semibold">
@@ -175,7 +182,7 @@ function ServicePage() {
             <div style={styles}>
               <Accordion title="What are some advantages to Private Utility Locating?">
                 <div className="grid grid-cols-6 mt-5 gap-3 text-center">
-                  <div className="bg-gray-300 hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                  <div className="bg-gray-300 hover:bg-gray-200 lg:col-span-2 md:col-span-3  col-span-6 p-3 rounded-md">
                     <img
                       src="/images/icons/shield.png"
                       alt="Example Image"
@@ -194,7 +201,7 @@ function ServicePage() {
                       them.
                     </p>
                   </div>
-                  <div className="bg-gray-300  hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                  <div className="bg-gray-300  hover:bg-gray-200 lg:col-span-2 md:col-span-3  col-span-6 p-3 rounded-md">
                     <img
                       src="/images/icons/efficient.png"
                       alt="Example Image"
@@ -212,7 +219,7 @@ function ServicePage() {
                       their projects.
                     </p>
                   </div>
-                  <div className="bg-gray-300  hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                  <div className="bg-gray-300  hover:bg-gray-200 lg:col-span-2 md:col-span-3  col-span-6 p-3 rounded-md">
                     <img
                       src="/images/icons/compliance.png"
                       alt="Example Image"
@@ -229,7 +236,7 @@ function ServicePage() {
                       regulations and avoiding any potential fines or penalties.
                     </p>
                   </div>
-                  <div className="bg-gray-300 hover:bg-gray-200 col-start-2 col-span-2 p-3 rounded-md">
+                  <div className="bg-gray-300 hover:bg-gray-200 lg:col-start-2 md:col-span-3 col-span-6 p-3 rounded-md">
                     <img
                       src="/images/icons/targeting.png"
                       alt="Example Image"
@@ -247,7 +254,7 @@ function ServicePage() {
                       setbacks.
                     </p>
                   </div>
-                  <div className="bg-gray-300 hover:bg-gray-200 col-span-2 p-3 rounded-md">
+                  <div className="bg-gray-300 hover:bg-gray-200 lg:col-span-2 md:col-span-4 col-span-6 md:col-start-2 p-3 rounded-md">
                     <img
                       src="/images/icons/sun.png"
                       alt="Example Image"
@@ -271,17 +278,17 @@ function ServicePage() {
           </div>
         </div>
 
-        <div className="">
+        <div className="md:mx-0 mx-5">
           <hr className="my-10"></hr>
           <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-7">
+            <div className="md:col-span-7 col-span-12">
               <img
                 src="/images/bunkienew.png"
                 alt="Example Image"
                 className=" h-auto w-auto rounded-sm lg:mt-0 mt-5 "
               />
             </div>
-            <div className="self-center col-span-5">
+            <div className="self-center md:col-span-5 col-span-12 ">
               <p className="footer-text lg:text-3xl md:text-2xl text-xl font-semibold text-center lg:mb-5 mb-2">
                 Ready to bring your construction project to life?
               </p>
@@ -292,13 +299,16 @@ function ServicePage() {
               </p>
               <div className="b mx-auto h-16 w-80 flex justify-center items-center mt-2 ">
                 <div className="i h-16 w-52 bg-gradient-to-br from-amber-400 to-amber-600 items-center rounded-lg shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out"></div>
-                <a className="text-md text-center text-white font-medium z-10 pointer-events-none flex">
+                <Link
+                  className="text-md text-center text-white font-medium z-10 pointer-events-none flex"
+                  href="pages/contact"
+                >
                   <p> Contact Us TODAY</p>
                   <FontAwesomeIcon
                     icon={faPenToSquare}
                     className="self-center ml-2"
                   />{" "}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
