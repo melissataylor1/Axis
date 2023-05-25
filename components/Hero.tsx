@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import bg from "../public/images/bg2.png";
 
 export default function Hero() {
   return (
