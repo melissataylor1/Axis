@@ -9,12 +9,21 @@ const GalleryPage: React.FC = () => {
     "/images/b6.png",
     "/images/b2.png",
     "/images/b3.png",
-    "/images/bunkie_int2.jpg",
+
     "/images/b4.png",
     "/images/b5.png",
     "/images/b7.png",
     "/images/b8.png",
     "/images/b1.png",
+    "/images/pic1.png",
+    "/images/pic2.png",
+    "/images/pic3.png",
+    "/images/pic4.png",
+    "/images/pic5.png",
+    "/images/pic6.png",
+    "/images/bunkie_int2.jpg",
+    "/images/pic7.png",
+    "/images/pic8.png",
   ];
 
   return (
