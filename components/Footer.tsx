@@ -21,7 +21,7 @@ export default function Footer() {
                   Phone<br></br>
                 </span>{" "}
                 <a className="text-black" href="tel:">
-                  666&#45;666&#45;6666
+                  226&#45;600&#45;7835
                 </a>
               </li>
               <li className="lg:mt-5 mt-2">

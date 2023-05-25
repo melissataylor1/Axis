@@ -146,8 +146,8 @@ export default function Features() {
 
                   <li>
                     {" "}
-                    <a
-                      href="#0"
+                    <Link
+                      href="/services"
                       className="flex transition ease-in-out delay-50  text-gray-500 hover:text-amber-500 duration-300 ml-5 md:ml-0 mt-5"
                     >
                       <p className="text-sm footer-text ">
@@ -157,7 +157,7 @@ export default function Features() {
                         icon={faCircleChevronRight}
                         className="text-sm ml-2 self-center"
                       />{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Logo from "./Logo";
 
 import MobileMenu from "./MobileNav";
+
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
 
