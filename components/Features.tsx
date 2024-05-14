@@ -44,9 +44,22 @@ export default function Features() {
                   alt="Wreath"
                 />
               </div>
-              <p className="xl:text-xl md:text-lg text-md text-gray-600 lg:leading-9 leading-7 font-light footer-text">
-                Awarded by Kiwa
-              </p>
+              <div className="grid-cols-1">
+                <p className="xl:text-xl md:text-lg text-md text-gray-600 lg:leading-9 leading-7 font-light footer-text my-3">
+                  Awarded by Kiwacag
+                </p>
+                <a
+                  href="https://kiwacag.com/best-general-contractors-guelph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/images/kiwa.png"
+                    className="mx-auto h-32   w-auto transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"
+                    alt="Kiwa"
+                  ></img>
+                </a>
+              </div>
             </div>
           </div>
           <hr className="pb-12 divide-y divide-blue-200"></hr>

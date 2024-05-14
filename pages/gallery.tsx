@@ -6,6 +6,7 @@ import Link from "next/link";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 const GalleryPage: React.FC = () => {
   const images = [
+    "/images/pic9.jpg",
     "/images/b6.png",
     "/images/b2.png",
     "/images/b3.png",
