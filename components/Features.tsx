@@ -20,6 +20,36 @@ export default function Features() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:w-auto md:w-11/12 sm:w-5/6 md:pb-16">
         <div className="pt-12 md:pt-20">
           {/* Section header */}
+
+          <div className="max-w-6xl mx-auto text-center pb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3">
+              <div className="md:col-span-2 grid grid-cols-6 items-center mb-3">
+                <img
+                  src="/images/wreath.png"
+                  className="h-32 md:h-44  w-auto col-span-1"
+                  alt="Wreath"
+                />
+                <h2 className="lg:h2 h3 col-span-4 self-center mx-1">
+                  <a
+                    href="https://kiwacag.com/best-general-contractors-guelph/"
+                    className="text-blue-500 hover:underline "
+                  >
+                    Top 3 Best
+                  </a>
+                  &nbsp;General Contractors in Guelph
+                </h2>
+                <img
+                  src="/images/wreath.png"
+                  className="h-32 md:h-44 w-auto transform scale-x-[-1] col-span-1"
+                  alt="Wreath"
+                />
+              </div>
+              <p className="xl:text-xl md:text-lg text-md text-gray-600 lg:leading-9 leading-7 font-light footer-text">
+                Awarded by Kiwa
+              </p>
+            </div>
+          </div>
+          <hr className="pb-12 divide-y divide-blue-200"></hr>
           <div className="max-w-6xl mx-auto text-center pb-12">
             <h2 className="h2 mb-4">Precision and Quality in Every Project.</h2>
             <p className="xl:text-xl md:text-lg text-md text-gray-600 lg:leading-9 leading-7 font-light footer-text">
@@ -40,44 +70,57 @@ export default function Features() {
             </p>
           </div>
           <hr className="pb-12 divide-y divide-blue-200"></hr>
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 inline md:grid md:grid-cols-3 gap-12">
-            <h2 className="h3 mb-4 col-span-3 md:text-3xl text-2xl ">
+
+          <div className="mx-auto text-center pb-12 md:pb-16">
+            <h2 className="h3 mb-4 text-2xl md:text-3xl">
               We are installation contractors for
             </h2>
-
-            <a
-              href="https://www.thebunkie.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/images/bunkie_logo.png"
-                alt="Example Image"
-                className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 md:w-auto mx-auto"
-              />
-            </a>
-            <a
-              href="https://sawmillstructures.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/images/sawmill_logo.webp"
-                alt="Example Image"
-                className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 mx-auto md:w-auto"
-              />
-            </a>
-            <a
-              href="https://www.timberbunkies.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/images/timber.png"
-                alt="Example Image"
-                className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 mx-auto md:w-auto pb-8 md:pb-0"
-              />
-            </a>
+            <div className="md:grid md:grid-cols-4 lg:gap-12 md:gap-6">
+              <a
+                href="https://www.thebunkie.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/bunkie_logo.png"
+                  alt="Example Image"
+                  className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 md:w-auto mx-auto"
+                />
+              </a>
+              <a
+                href="https://sawmillstructures.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/sawmill_logo.webp"
+                  alt="Example Image"
+                  className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 md:w-auto mx-auto"
+                />
+              </a>
+              <a
+                href="https://www.timberbunkies.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/timber.png"
+                  alt="Example Image"
+                  className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 md:w-auto mx-auto pb-8 md:pb-0"
+                />
+              </a>
+              <a
+                href="https://bunkielife.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/bunkie-life.png"
+                  alt="Example Image"
+                  className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 w-44 md:w-auto mx-auto pb-8 md:pb-0"
+                />
+              </a>
+            </div>
           </div>
           {/* Section content */}
           <div className="md:grid md:grid-cols-5 md:gap-6">
